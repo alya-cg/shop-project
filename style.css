@@ -30,7 +30,12 @@ body {
     width:50%;
 }
 
-.row:after {
+.col-md-9 {
+    width:75%;
+    margin-top: 15px;
+}
+
+.row:after, .menu:after {
     content: "";
     clear: both;
     display: block;
@@ -74,4 +79,11 @@ body {
     color: white;
 }
 
-    
+.txt {
+    background-color: transparent;
+    border: 0;
+}
+
+.search {
+border: solid 1px #2c71b8;
+}
