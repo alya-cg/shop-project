@@ -32,7 +32,7 @@ body {
 
 .col-md-9 {
     width:75%;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .row:after, .menu:after {
@@ -74,16 +74,91 @@ body {
     color: #2c71b8;
 }
 
-.menu a:hover {
+.menu li:hover > a  {
     background-color: #2c71b8;
+    color: white;
+}
+
+.submenu {
+    width: 250px;
+    background:  #2c71b8;
+    color : white;
+    position: absolute;
+    padding: 0;
+    visibility: hidden;
+    border: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+    display: block;
+    margin-left: -1px;
+}
+
+.submenu li {
+        width: 100%;
+        display: block;
+    }
+
+.menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.submenu > li:hover > a {
+    background:  white;;
+    color: #2c71b8;
+}
+
+.submenu a {
     color: white;
 }
 
 .txt {
     background-color: transparent;
     border: 0;
+    height: 30px;
 }
 
 .search {
 border: solid 1px #2c71b8;
+height: 39px;
+line-height: 39px;
+}
+
+.search button {
+    background-color:#2c71b8 ;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+}
+
+.search img {
+    width: 15px;
+    height: 15px;
+}
+
+.cart {
+    height: 41px;
+    width: 41px;
+    background-color: white;
+    margin: 4px 0 0 0;
+    padding: 4px 0 0 0;
+    line-height: 41px;
+    text-align: center;
+    position: relative;
+}
+
+.product-count{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    background-color: #2c71b8;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height:18px;
 }
